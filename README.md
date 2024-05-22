@@ -10,12 +10,17 @@ wg-tui handles generating and reloading Wireguard configs whenever you make a ch
 
 ## Dependencies
 
-wg-tui requires Python >= 3.10.
+wg-tui requires Python >= 3.10, which is almost certainly included in your distro.
 
-**Ubuntu (22.04,24.04) / Debian (11, 12):** `wireguard`, `wireguard-tools`
+**Ubuntu (22.04,24.04) / Debian (11, 12):** `wireguard-tools`
 
 ```
-sudo apt install -y wireguard wireguard-tools
+sudo apt install -y wireguard-tools
+```
+
+**Fedora (39,40)**
+```
+sudo dnf install wireguard-tools
 ```
 
 **Arch Linux:** `wireguard-tools`
@@ -27,6 +32,8 @@ sudo pacman -S wireguard-tools
 ## Usage
 To start setup, run `wg-tui.py`. You will be asked for some quick information about how you'd like your VPN to be set up.
 Once setup is complete, the Wireguard service will be enabled and started.
+
+> Note: wg-tui will not open any ports on your firewall. To ensure that clients can connect, make sure the port you choose here is open to UDP connections.
 
 To manage clients, just run `wg-tui.py` again.
 
