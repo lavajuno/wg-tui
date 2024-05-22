@@ -18,7 +18,7 @@ wg-tui requires Python >= 3.10, which is almost certainly included in your distr
 sudo apt install -y wireguard-tools
 ```
 
-**Fedora (39,40)**
+**Fedora (39,40):** `wireguard-tools`
 ```
 sudo dnf install wireguard-tools
 ```
