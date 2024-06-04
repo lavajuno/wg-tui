@@ -308,7 +308,7 @@ class State:
             s += CLIENT_PEER.format(
                 server.pub_key,
                 self.__config.prefix4 + "0/24",
-                self.__config.prefix6 + "/24",
+                self.__config.prefix6 + "/64",
                 endpoint
             )
 
