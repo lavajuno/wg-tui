@@ -3,7 +3,7 @@
 """
     wg-tui.py
     https://github.com/lavajuno/wg-tui
-    Modified 2024-05-21
+    Modified 2024-06-03
 """
 
 import json
