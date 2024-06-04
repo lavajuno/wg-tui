@@ -10,6 +10,8 @@ wg-tui handles generating and reloading Wireguard configs whenever you make a ch
 
 ## Dependencies
 
+> Note: Make sure packet forwarding on your system is enabled! If you're unsure, uncomment `net.ipv4.ip_forward=1` and `net.ipv6.conf.all.forwarding=1` in `/etc/sysctl.conf`.
+
 wg-tui requires Python >= 3.10, which is almost certainly included in your distro.
 
 **Ubuntu (22.04,24.04) / Debian (11, 12):** `wireguard-tools`
