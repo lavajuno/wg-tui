@@ -2,9 +2,10 @@
 TUI tool to configure and manage a Wireguard server.
 
 ## Features
-- Create, export, and delete clients
+- Create, view, edit, export, and delete clients
 - Easily set up NAT for remote / internet access
 - Assign custom DNS servers
+- Automatic generation and reloading of configs
 
 wg-tui handles generating and reloading Wireguard configs whenever you make a change.
 
@@ -17,7 +18,7 @@ wg-tui requires Python >= 3.10, which is almost certainly included in your distr
 **Ubuntu (22.04,24.04) / Debian (11, 12):** `wireguard-tools`
 
 ```
-sudo apt install -y wireguard-tools
+sudo apt install wireguard-tools
 ```
 
 **Fedora (39,40):** `wireguard-tools`
