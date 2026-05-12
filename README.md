@@ -5,13 +5,21 @@
 
 Scriptable shortcuts for managing WireGuard interfaces.
 Works with [wg-quick](https://git.zx2c4.com/wireguard-tools/about/src/man/wg-quick.8)
-to create common setups in seconds, while leaving room for more advanced
+to create common setups in seconds, while allowing the user to create advanced
 configurations.
 
 ## Installation
 
+Install as a Python package:
+
 ```
 pip install wgup
+```
+
+Or, install as a standalone utility:
+
+```
+pipx install wgup
 ```
 
 ## Features
@@ -31,13 +39,13 @@ uncomment `net.ipv4.ip_forward=1` and `net.ipv6.conf.all.forwarding=1` in
 wgup requires Python >= 3.10, which is almost certainly included in your
 distro.
 
-**Ubuntu (22.04,24.04) / Debian (11, 12):** `wireguard-tools`
+**Ubuntu (22.04, 24.04, 26.04) / Debian (12, 13):** `wireguard-tools`
 
 ```
 sudo apt install wireguard-tools
 ```
 
-**Fedora (39,40):** `wireguard-tools`
+**Fedora (39+):** `wireguard-tools`
 ```
 sudo dnf install wireguard-tools
 ```
