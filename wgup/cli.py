@@ -487,7 +487,7 @@ class Peer:
     @classmethod
     def rm(cls, args: argparse.Namespace):
         c = Config()
-        iface, _ = cls._get(c, args.interface)
+        iface, _ = cls._get(c, args)
         if not args.force:
             print("Are you sure you want to remove this peer?")
             print("This operation is irreversible!")
