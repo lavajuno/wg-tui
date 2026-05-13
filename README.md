@@ -1,12 +1,17 @@
 # wgup
 
-> NOTE: This project is a very early work in progress. Features and
-> documentation WILL be missing.
+![License badge](https://img.shields.io/github/license/lavajuno/wgup
+) ![Python version badge](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Flavajuno%2Fwgup%2Frefs%2Fheads%2Fmain%2Fpyproject.toml&logo=python) ![Downloads badge](https://img.shields.io/pypi/dm/wgup)
 
 Scriptable shortcuts for managing WireGuard interfaces.
-Works with [wg-quick](https://git.zx2c4.com/wireguard-tools/about/src/man/wg-quick.8)
-to create common setups in seconds, while allowing the user to create advanced
-configurations.
+Works with (and alongside) [wg-quick](https://git.zx2c4.com/wireguard-tools/about/src/man/wg-quick.8).
+
+wgup lets you __create common setups in seconds__, while leaving room for advanced configurations.
+
+![Demo](doc/img/demo.gif)
+
+> NOTE: This project is an early work in progress. Features and
+> documentation WILL be missing.
 
 ## Installation
 
