@@ -293,7 +293,7 @@ class Iface:
                 raise ArgsException(
                     f'[!] NAT to {args.cidr6} does not exist on interface "{args.interface}".'
                 )
-            c.save()
+        c.save()
         print(f'[i] Removed NAT on interface "{args.interface}".')
         return 0
 
