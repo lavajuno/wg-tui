@@ -29,11 +29,11 @@ class Config:
         if not os.path.exists(_CONFIG_INTERFACES):
             return
         with open(_CONFIG_INTERFACES, "rb") as f:
-            networks_json = json.loads(f.read())
-        if networks_json["version"] != defaults.CONFIG_VERSION:
-            raise ConfigVersionException("[!] Incompatible config version.")
-        for n in networks_json["interfaces"]:
-            interface = Interface.from_json(n)
+            interfaces_json = json.loads(f.read())
+        if interfaces_json["version"] > defaults.CONFIG_VERSION:
+            raise ConfigVersionException(f"[!] Incompatible config version. Update wgup to use this config.")
+        for i in interfaces_json["interfaces"]:
+            interface = Interface.from_json(i)
             self.interfaces[interface.vpn_iface] = interface
 
     def save(self):
