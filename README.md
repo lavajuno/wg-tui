@@ -1,7 +1,10 @@
 # wgup
 
-![License badge](https://img.shields.io/github/license/lavajuno/wgup
-) ![Python version badge](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Flavajuno%2Fwgup%2Frefs%2Fheads%2Fmain%2Fpyproject.toml&logo=python) ![Downloads badge](https://img.shields.io/pypi/dm/wgup)
+![Downloads badge](https://img.shields.io/pypi/dm/wgup)
+![Package status badge](https://img.shields.io/github/actions/workflow/status/lavajuno/wgup/build-wheel.yml?label=package)
+![Tests status badge](https://img.shields.io/github/actions/workflow/status/lavajuno/wgup/unit-tests.yml?label=tests)
+![Python version badge](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Flavajuno%2Fwgup%2Frefs%2Fheads%2Fmain%2Fpyproject.toml&logo=python)
+![License badge](https://img.shields.io/github/license/lavajuno/wgup)
 
 Scriptable shortcuts for managing WireGuard interfaces.
 Works with (and alongside) [wg-quick](https://git.zx2c4.com/wireguard-tools/about/src/man/wg-quick.8).
