@@ -11,7 +11,7 @@ Works with (and alongside) [wg-quick](https://git.zx2c4.com/wireguard-tools/abou
 
 wgup lets you __create common setups in seconds__, while leaving room for advanced configurations.
 
-![Demo](doc/img/demo.gif)
+![Demo](https://raw.githubusercontent.com/lavajuno/wgup/refs/heads/main/doc/img/demo.gif)
 
 > NOTE: This project is an early work in progress. Features and
 > documentation WILL be missing.
